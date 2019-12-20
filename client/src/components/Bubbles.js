@@ -12,6 +12,7 @@ const Bubbles = ({ colors }) => {
     setBubbleData(generateBubbleData);
   }, [colors]);
 
+
   return (
     <div className="bubble-wrap">
       <p>bubbles</p>
@@ -21,7 +22,7 @@ const Bubbles = ({ colors }) => {
             children: bubbleData
           }}
           sum={datum => datum.value}
-          size={[400, 400]}
+          size={[200, 200]}
           includeRoot={false}
           nodeEnter={d => ({ ...d, r: 0 })}
           animate
